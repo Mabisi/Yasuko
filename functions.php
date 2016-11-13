@@ -1,4 +1,7 @@
 <?php
+
+define('YASOKU_VERSION','1.0.2');
+
 function angela_get_background_image($post_id){
     if( has_post_thumbnail($post_id) ){
         $timthumb_src = wp_get_attachment_image_src(get_post_thumbnail_id($post_id),'full');
@@ -56,7 +59,8 @@ function yasuko_scripts_styles() {
 
 
     // Loads our main stylesheet.
-    wp_enqueue_style( 'yasuko-style', get_stylesheet_uri(), array(), '2013-07-18' );
+    //wp_enqueue_style( 'yasuko-style', get_stylesheet_uri(), array(), YASOKU_VERSION );
+    wp_enqueue_style( 'yasuko-min', get_template_directory_uri() . '/build/css/app.css', array(), YASOKU_VERSION );
 
 }
 add_action( 'wp_enqueue_scripts', 'yasuko_scripts_styles' );

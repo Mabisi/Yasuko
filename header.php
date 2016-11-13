@@ -14,12 +14,13 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
     <header id="header" class="home-header blog-background banner-mask lazy no-cover" style="background-image:url(<?php echo get_template_directory_uri()?>/images/yasuko.jpg);">
-        <div class="nav-header">
+        <div class="nav-header container">
             <div class="nav-header-container">
                 <a class="back-home" href="/">Home</a>
             </div>
         </div>
         <div class="header-wrap">
+            <div class="container">
             <?php if (is_singular()) : ?>
                 <div class="header-wrap">
                     <div class="post-info-container">
@@ -36,8 +37,6 @@
                 </a>
                 <h4><?php echo get_bloginfo('description');?></h4>
             </div>
-            <div class="arrow_down" data-offset="-45">
-                <a href="javascript:;"></a>
             </div>
         </div>
         <?php endif;?>
