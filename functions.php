@@ -1,6 +1,6 @@
 <?php
 
-define('YASOKU_VERSION','1.0.3');
+define('YASOKU_VERSION','1.0.2');
 
 function angela_get_background_image($post_id){
     if( has_post_thumbnail($post_id) ){
