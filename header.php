@@ -13,7 +13,7 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-    <header id="header" class="home-header blog-background banner-mask lazy no-cover" style="background-image:url(<?php echo get_template_directory_uri()?>/images/yasuko.jpg);">
+    <header id="header" class="home-header blog-background banner-mask lazy no-cover" style="background-image:url(<?php echo get_template_directory_uri()?>/build/img/yasuko.jpg);">
         <div class="nav-header container">
             <div class="nav-header-container">
                 <a class="back-home" href="/">Home</a>
